@@ -1,0 +1,323 @@
+.InicioUsuario{
+}
+
+.inicio-u-cont{
+	margin: 5px;
+}
+
+.inicio-u-cont .seccion{
+	background: ghostwhite;
+	margin: 10px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.inicio-u-cont .seccion .categoria-titulo{
+	margin: 10px;
+	margin-left: 30px;
+	color: gray;
+	font-size: 25px;
+	font-weight: lighter;
+	cursor: default;
+}
+
+.inicio-u-cont .productos-stock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 10px;
+	margin-top: 10px;
+	background: ghostwhite;
+
+}
+
+.inicio-u-cont .productos-stock .stock-cont{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+}
+
+.tarjeta-producto-u{
+	display: grid;
+	grid-template-rows: 15% auto 28% 15%;
+	padding: 15px;
+	margin: 10px;
+	min-width: 250px;
+	height: 300px;
+	background: white;
+	border: 1px solid aliceblue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(200, 200, 200, 1.0);
+	transition: transform 1s ease-in-out;
+	transform: translateX(0);
+}
+.tarjeta-producto-u:hover{
+	border: 1px solid skyblue;
+}
+
+.btn-stock{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	min-width: 50px;
+	height: 50px;
+	opacity: 0;
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	border-radius: 100%;
+	box-shadow: 2px 2px 25px rgba(200, 200, 200, .5);
+	transition: opacity .5s ease-in-out;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.btn-stock:first-child{
+	margin-right: 0;
+}
+.btn-stock:last-child{
+	margin-left: 0;
+}
+
+.tarjeta-producto-u .titulo{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.tarjeta-producto-u .desc{
+	padding: 5px;
+	color: gray;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.tarjeta-producto-u .desc p{
+	cursor: pointer;	
+}
+
+.tarjeta-producto-u .precio{
+	padding: 5px;
+	font-weight: bold;
+	color: limegreen;
+}
+.tarjeta-producto-u .categoria p{
+	display: inline;
+	margin-top: 2px;
+	padding: 3px;
+	font-size: 12px;
+	color: gray;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+.tarjeta-producto-u .cantidad{
+	margin-top: 5px;
+	padding: 5px;
+	color: silver;
+	font-size: 12px;
+}
+
+
+/*btn agregar inicio*/
+
+.tarjeta-producto-u .agregar-cont{
+	padding: 2px;
+ 	display: flex;
+}
+
+.tarjeta-producto-u .btn-agregar{
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: skyblue;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.tarjeta-producto-u .btn-agregar:hover{
+	background: #4BA4EC;
+}
+
+
+.tarjeta-producto-u .bnt-sacaAgrega{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	padding: 5px 10px;
+	background: #4BA4EC;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.tarjeta-producto-u .bnt-sacaAgrega:hover{
+	background: skyblue;
+}
+
+/*Mo*/
+
+/*.vm-inicioUsuario{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: rgba(200, 200, 200, .3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vm-inicioUsuario .cont{
+	background: white;
+	width: 400px;
+	height: 400px;
+}
+
+.vm-inicioUsuario .cont .producto{
+	margin: 10px;
+	padding: 10px;
+}
+
+.vm-inicioUsuario .cont .producto p{
+	margin-top: 5px;
+}*/
+
+
+
+/*Vista modal del producto*/
+
+.vm-inicio-u{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: rgba(200, 200, 200, .3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+
+.vm-inicio-u .cont{
+	background: white;
+	padding: 5px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 25px rgb(200, 200, 200);
+}
+
+.vm-inicio-u .cont .producto{
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio-u .cont .producto .cabecera{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.vm-inicio-u .cont .producto .cabecera .titulo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.vm-inicio-u .cont .producto .cabecera .btn-cerrar{
+	cursor: pointer;
+	color: skyblue;
+}
+
+.vm-inicio-u .cont .producto .descripcion{
+	padding: 5px;
+	color: gray;
+}
+
+.vm-inicio-u .cont .producto .pie{
+	padding: 5px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio-u .cont .producto .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.vm-inicio-u .cont .producto .categoria-cont{
+	padding: 5px;
+}
+
+.vm-inicio-u .cont .producto .categoria{
+	display: inline;
+	padding: 2px;
+	background: aliceblue;
+	color: gray;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.vm-inicio-u .cont .producto .cantidad{
+	padding: 5px;
+	font-size: 12px;
+	color: silver;
+}
+
+.vm-inicio-u .cont .agregar-cont{
+	padding: 2px;
+ 	display: flex;
+}
+
+.vm-inicio-u .cont .btn-agregar{
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: skyblue;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.vm-inicio-u .cont .btn-agregar:hover{
+	background: #4BA4EC;
+
+}
+
+
+.vm-inicio-u .cont .bnt-sacaAgrega{
+	margin: 5px;
+	padding: 5px 10px;
+	background: #4BA4EC;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.vm-inicio-u .cont .bnt-sacaAgrega:hover{
+	background: skyblue;
+}

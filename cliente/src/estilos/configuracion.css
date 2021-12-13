@@ -1,0 +1,92 @@
+.Configuracion{
+	background: ghostwhite;
+	padding: 20px;
+}
+
+.cambios-guardados{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	padding: 10px;
+	color: steelblue;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px rgba(100, 100, 250, .2);
+
+}
+
+.Configuracion .seccion-titulo{
+	color: gray;
+}
+
+.Configuracion .seccion-nombre-cont{
+	padding: 20px;
+	margin: 10px;
+	border-bottom: 1px solid steelblue;
+}
+
+.Configuracion .seccion-nombre-cont .seccion-nombre{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px;
+	margin: 5px;
+	background: aliceblue;
+}
+
+.Configuracion .seccion-nombre-cont .seccion-nombre p{
+	color: steelblue;
+}
+
+.Configuracion .seccion-nombre-cont .seccion-nombre input{
+	margin-right: 10px;
+	padding: 5px;
+	outline: none;
+	border: 1px solid skyblue;
+}
+
+.Configuracion .seccion-email-cont{
+	padding: 20px;
+	margin: 10px;
+	border-bottom: 1px solid steelblue;
+}
+
+.Configuracion .seccion-email-cont .seccion-email{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px;
+	margin: 5px;
+	background: aliceblue;
+}
+
+.Configuracion .seccion-email-cont .seccion-email p{
+	color: steelblue;
+}
+
+.Configuracion .seccion-email-cont .seccion-email input{
+	margin-right: 10px;
+	padding: 5px;
+	outline: none;
+	border: 1px solid skyblue;
+}
+
+.Configuracion .btn-guardar{
+	padding: 10px;
+	margin: 15px 5px;
+	border: none;
+	background: #4BA4EC;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .5s ease;
+}
+
+.Configuracion .btn-guardar:hover{
+	background: steelblue;
+
+}

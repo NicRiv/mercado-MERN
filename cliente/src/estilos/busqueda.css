@@ -1,0 +1,140 @@
+.inicio-cont .busqueda-cont{
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 50%;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont{
+	margin: 5px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto 43px auto;
+	background: rgb(253, 253, 253);
+	border: 1px solid aliceblue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgb(200, 200, 200);
+
+	cursor: pointer;
+}
+.inicio-cont .busqueda-cont .tarjeta-cont:hover{
+	border: 1px solid skyblue;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .titulo{
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .desc{
+	padding: 5px;
+	color: gray;
+	overflow: hidden;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .pie{
+	padding: 5px;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .pie .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .pie .categoria{
+	padding: 5px;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .pie .categoria p{
+	padding: 2px;
+	display: inline;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.inicio-cont .busqueda-cont .tarjeta-cont .pie .cantidad{
+	padding: 5px;
+	font-size: 12px;
+	color: silver;
+}
+
+/*Vista modal del producto*/
+
+.vm-inicio{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: rgba(200, 200, 200, .3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+
+.vm-inicio .cont{
+	background: white;
+	padding: 5px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 25px rgb(200, 200, 200);
+}
+
+.vm-inicio .cont .producto{
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio .cont .producto .cabecera{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.vm-inicio .cont .producto .cabecera .titulo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.vm-inicio .cont .producto .cabecera .btn-cerrar{
+	cursor: pointer;
+	color: skyblue;
+}
+
+.vm-inicio .cont .producto .descripcion{
+	padding: 5px;
+	color: gray;
+}
+
+.vm-inicio .cont .producto .pie{
+	padding: 5px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio .cont .producto .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.vm-inicio .cont .producto .categoria-cont{
+	padding: 5px;
+}
+
+.vm-inicio .cont .producto .categoria{
+	display: inline;
+	padding: 2px;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.vm-inicio .cont .producto .cantidad{
+	padding: 5px;
+	font-size: 12px;
+	color: silver;
+}

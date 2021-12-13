@@ -1,0 +1,105 @@
+.MisCompras{
+	padding: 20px;
+}
+
+.MisCompras .compra-producto{
+	padding: 10px;
+	margin: 20px;
+	background: ghostwhite;
+	border: 1px solid steelblue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(100, 100, 100, .2);
+	cursor: pointer;
+}
+
+.MisCompras .compra-producto:hover{
+	border: 1px solid skyblue;
+	box-shadow: 2px 2px 15px rgba(100, 100, 250, .1);
+}
+
+.MisCompras .compra-producto p{
+	font-size: 15px;
+}
+
+.MisCompras .separador{
+	padding: 0;
+	height: 5px;
+	border-bottom: 1px solid silver;
+}
+
+/*Vista modal del producto*/
+
+.vm-inicio{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: rgba(200, 200, 200, .3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+
+.vm-inicio .cont{
+	background: white;
+	padding: 5px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 25px rgb(200, 200, 200);
+}
+
+.vm-inicio .cont .producto{
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio .cont .producto .cabecera{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.vm-inicio .cont .producto .cabecera .titulo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.vm-inicio .cont .producto .cabecera .btn-cerrar{
+	cursor: pointer;
+	color: skyblue;
+}
+
+.vm-inicio .cont .producto .descripcion{
+	padding: 5px;
+	color: gray;
+}
+
+.vm-inicio .cont .producto .pie{
+	padding: 5px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio .cont .producto .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.vm-inicio .cont .producto .categoria-cont{
+	padding: 5px;
+}
+
+.vm-inicio .cont .producto .categoria{
+	display: inline;
+	padding: 2px;
+	color: gray;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}

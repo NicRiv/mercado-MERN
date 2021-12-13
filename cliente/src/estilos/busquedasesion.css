@@ -1,0 +1,233 @@
+.busq-u .busqueda-cont{
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 50%;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont{
+	margin: 5px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto 43px auto;
+	background: rgb(253, 253, 253);
+	border: 1px solid aliceblue;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgb(200, 200, 200);
+}
+.busq-u .busqueda-cont .tarjeta-cont:hover{
+	border: 1px solid skyblue;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .titulo h3{
+	display: inline;
+	cursor: pointer;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .desc{
+	padding: 5px;
+	color: gray;
+	overflow: hidden;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .desc p{
+	display: inline;
+	cursor: pointer;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .pie{
+	padding: 5px;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .pie .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .pie .categoria{
+	padding: 5px;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .pie .categoria p{
+	padding: 2px;
+	display: inline;
+	background: aliceblue;
+	color: gray;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.busq-u .busqueda-cont .tarjeta-cont .pie .cantidad{
+	padding: 5px;
+	font-size: 12px;
+	color: silver;
+}
+
+/*btn agregar busqueda sesion*/
+
+.tarjeta-producto-busq-u .agregar-cont{
+	padding: 2px;
+ 	display: flex;
+}
+
+.tarjeta-producto-busq-u .btn-agregar{
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: skyblue;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.tarjeta-producto-busq-u .btn-agregar:hover{
+	background: #4BA4EC;
+}
+
+
+.tarjeta-producto-busq-u .bnt-sacaAgrega{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	padding: 5px 10px;
+	background: #4BA4EC;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.tarjeta-producto-busq-u .bnt-sacaAgrega:hover{
+	background: skyblue;
+}
+
+
+/*Vista modal del producto*/
+
+.vm-inicio-u{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: rgba(200, 200, 200, .3);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+
+.vm-inicio-u .cont{
+	background: white;
+	padding: 5px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 25px rgb(200, 200, 200);
+}
+
+.vm-inicio-u .cont .producto{
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio-u .cont .producto .cabecera{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.vm-inicio-u .cont .producto .cabecera .titulo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.vm-inicio-u .cont .producto .cabecera .btn-cerrar{
+	cursor: pointer;
+	color: skyblue;
+}
+
+.vm-inicio-u .cont .producto .descripcion{
+	padding: 5px;
+	color: gray;
+}
+
+.vm-inicio-u .cont .producto .pie{
+	padding: 5px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}
+
+.vm-inicio-u .cont .producto .precio{
+	padding: 5px;
+	color: limegreen;
+}
+
+.vm-inicio-u .cont .producto .categoria-cont{
+	padding: 5px;
+}
+
+.vm-inicio-u .cont .producto .categoria{
+	display: inline;
+	padding: 2px;
+	background: aliceblue;
+	border: 1px solid skyblue;
+	border-radius: 5px;
+	cursor: default;
+}
+
+.vm-inicio-u .cont .producto .cantidad{
+	padding: 5px;
+	font-size: 12px;
+	color: silver;
+}
+
+/*Boton agrega modal busqueda sesion*/
+
+.vm-inicio-u .cont .agregar-cont{
+	padding: 2px;
+ 	display: flex;
+}
+
+.vm-inicio-u .cont .btn-agregar{
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: skyblue;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.vm-inicio-u .cont .btn-agregar:hover{
+	background: #4BA4EC;
+
+}
+
+
+.vm-inicio-u .cont .bnt-sacaAgrega{
+	margin: 5px;
+	padding: 5px 10px;
+	background: #4BA4EC;
+	color: white;
+	border: 1px solid #4BA4EC;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(210, 210, 210, .7);
+	transition: background .3s;
+	cursor: pointer;
+}
+.vm-inicio-u .cont .bnt-sacaAgrega:hover{
+	background: skyblue;
+}
