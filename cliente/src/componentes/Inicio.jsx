@@ -1,10 +1,33 @@
 import React, {useEffect, useState, useRef} from 'react'
 import axios from 'axios'
 
+import demoDB from '../db-demo/demo.json'
+
 //css
 import '../estilos/inicio.css'
 
 const Inicio = () => {
+	// Cargar datos demo a la DB
+	useEffect(() => {
+		const subir = async () => {
+			const res = await axios.get('http://localhost:4000/api/productos/stock')
+			if (res.data.length === 0) {
+				for (const pos in demoDB) {
+					await axios.post('http://localhost:4000/api/productos/agregar', {
+						nombre: demoDB[pos].nombre,
+						descripcion: demoDB[pos].descripcion,
+						categoria: demoDB[pos].categoria,
+						precio: demoDB[pos].precio,
+						cantidad: demoDB[pos].cantidad
+					})
+				}
+				obtener()
+			}
+		}
+		subir()	
+	}, [])
+	
+	// Inicio
 	const [listaMusica, setListaMusica] = useState([])
 	const [listaTecnologia, setListaTecnologia] = useState([])
 	const [listaDeportes, setListaDeportes] = useState([])
